@@ -11,4 +11,8 @@
 *.~undo-tree
 
 # Miscellaneous
-recentf
+/recentf
+/network-security.data
+/elpa
+/elpa-*
+/projects
