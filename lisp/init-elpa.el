@@ -34,7 +34,7 @@
     (package-install package)))
 
 (defun ysouyno-install-all-packages ()
-  "Install all packages listed in `ysouyno-packages'"
+  "Install all packages listed in `ysouyno-packages'."
   (unless (cl-every #'package-installed-p ysouyno-packages)
     (message "%s" "Not all packages in `ysouyno-packages' installed!")
     (package-refresh-contents)

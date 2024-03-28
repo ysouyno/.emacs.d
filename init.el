@@ -1,11 +1,12 @@
 ;;; init.el --- init.el
 ;;; Commentary:
-
 ;;; Code:
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (require 'init-elpa)
+(require 'init-editor)
+(require 'init-emacs-lisp)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -17,7 +18,6 @@
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(make-backup-files nil)
- '(package-selected-packages '(rust-mode tree-sitter-langs htmlize))
  '(tags-table-list
    '("D:/demos/emacs-28.2/cygwin_build/src/TAGS" "D:/demos/emacs-28.2/cygwin_build/lisp/TAGS")))
 
@@ -45,3 +45,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;; init.el ends here
