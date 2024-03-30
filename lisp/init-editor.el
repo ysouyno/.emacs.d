@@ -2,6 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
+(when (fboundp 'electric-pair-mode)
+  (add-hook 'after-init-hook 'electric-pair-mode))
+
 
 (when (fboundp 'display-line-numbers-mode)
   (setq-default display-line-numbers-width 3)

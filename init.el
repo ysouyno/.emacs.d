@@ -6,7 +6,27 @@
 
 (require 'init-elpa)
 (require 'init-editor)
+(require 'init-minibuffer)
+(require 'init-corfu)
 (require 'init-emacs-lisp)
+
+(recentf-mode 1)
+(setq recentf-max-saved-items 100)
+(setq recentf-max-menu-items 100)
+(global-set-key "\C-c\ f" 'recentf-open-files)
+
+(setq major-mode-remap-alist
+      '((sh-mode . bash-ts-mode)
+        (c-mode . c-ts-mode)
+        (c++-mode . c++-ts-mode)
+        (c-or-c++-mode . c-or-c++-ts-mode)
+        (python-mode . python-ts-mode)))
+
+(cond
+ ((version= emacs-version "28.2")
+  (setq find-function-C-source-directory "D:/demos/emacs-28.2/src/"))
+ ((version= emacs-version "29.2")
+  (setq find-function-C-source-directory "D:/demos/emacs-29.2/src/")))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -20,24 +40,6 @@
  '(make-backup-files nil)
  '(tags-table-list
    '("D:/demos/emacs-28.2/cygwin_build/src/TAGS" "D:/demos/emacs-28.2/cygwin_build/lisp/TAGS")))
-
-(cond
- ((version= emacs-version "28.2")
-  (setq find-function-C-source-directory "D:/demos/emacs-28.2/src/"))
- ((version= emacs-version "29.2")
-  (setq find-function-C-source-directory "D:/demos/emacs-29.2/src/")))
-
-(recentf-mode 1)
-(setq recentf-max-saved-items 100)
-(setq recentf-max-menu-items 100)
-(global-set-key "\C-c\ f" 'recentf-open-files)
-
-(setq major-mode-remap-alist
-      '((sh-mode . bash-ts-mode)
-        (c-mode . c-ts-mode)
-        (c++-mode . c++-ts-mode)
-        (c-or-c++-mode . c-or-c++-ts-mode)
-        (python-mode . python-ts-mode)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
