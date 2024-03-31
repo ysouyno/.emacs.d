@@ -22,30 +22,8 @@
         (c-or-c++-mode . c-or-c++-ts-mode)
         (python-mode . python-ts-mode)))
 
-(cond
- ((version= emacs-version "28.2")
-  (setq find-function-C-source-directory "D:/demos/emacs-28.2/src/"))
- ((version= emacs-version "29.2")
-  (setq find-function-C-source-directory "D:/demos/emacs-29.2/src/")))
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(grep-find-template
-   "\"D:/cygwin64/bin/find.exe\" -H <D> <X> -type f <F> -exec \"grep\" <C> -nH --null <R> \"{}\" \";\"")
- '(indent-tabs-mode nil)
- '(inhibit-startup-screen t)
- '(make-backup-files nil)
- '(tags-table-list
-   '("D:/demos/emacs-28.2/cygwin_build/src/TAGS" "D:/demos/emacs-28.2/cygwin_build/lisp/TAGS")))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(setq custom-file (locate-user-emacs-file "custom.el"))
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 ;;; init.el ends here
