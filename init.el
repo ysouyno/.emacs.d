@@ -10,6 +10,7 @@
 (require 'init-recentf)
 (require 'init-consult)
 (require 'init-corfu)
+(require 'init-vc)
 (require 'init-emacs-lisp)
 
 (when (and (require 'treesit nil t)
