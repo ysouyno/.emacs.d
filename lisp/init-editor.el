@@ -18,11 +18,11 @@
 
 ;;; Page break lines
 ;;; `M-x quoted-insert RET C-l'(or `C-q') insert `^L'
-(ysouyno-install-a-package 'page-break-lines)
-(add-hook 'after-init-hook 'global-page-break-lines-mode)
+(when (maybe-require-package 'page-break-lines)
+  (add-hook 'after-init-hook 'global-page-break-lines-mode))
 
 
-(ysouyno-install-a-package 'which-key)
+(require-package 'which-key)
 (add-hook 'after-init-hook 'which-key-mode)
 (setq-default which-key-idle-delay 1.5)
 

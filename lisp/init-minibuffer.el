@@ -2,8 +2,11 @@
 ;;; Commentary:
 ;;; Code:
 
-(ysouyno-install-a-package 'vertico)
-(add-hook 'after-init-hook 'vertico-mode)
+(when (maybe-require-package 'vertico)
+  (add-hook 'after-init-hook 'vertico-mode))
+
+(when (maybe-require-package 'marginalia)
+  (add-hook 'after-init-hook 'marginalia-mode))
 
 (provide 'init-minibuffer)
 
