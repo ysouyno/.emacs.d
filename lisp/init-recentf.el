@@ -6,10 +6,16 @@
 (setq-default
  recentf-max-saved-items 99
  recentf-max-menu-items 100
- recentf-exclude `("/tmp/" "/ssh:" ,(concat package-user-dir "/.*-autoloads\\.el\\'")))
+ recentf-exclude `("/tmp/"
+                   "/ssh:"
+                   ,(concat package-user-dir "/.*-autoloads\\.el\\'")
+                   "/TAGS"
+                   ))
 
 
-(global-set-key "\C-c\ f" 'recentf-open-files)
+(if (fboundp 'consult-recent-file)
+    (global-set-key "\C-c\ f" 'consult-recent-file)
+  (global-set-key "\C-c\ f" 'recentf-open-files))
 
 
 (provide 'init-recentf)

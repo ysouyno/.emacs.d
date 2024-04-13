@@ -3,11 +3,12 @@
 ;;; Code:
 
 (setq major-mode-remap-alist
-      '((sh-mode . bash-ts-mode)
+      '((c-or-c++-mode . c-or-c++-ts-mode)
         (c-mode . c-ts-mode)
         (c++-mode . c++-ts-mode)
-        (c-or-c++-mode . c-or-c++-ts-mode)
-        (python-mode . python-ts-mode)))
+        (sh-mode . bash-ts-mode)
+        (python-mode . python-ts-mode)
+        (rust-mode . rust-ts-mode)))
 
 
 (provide 'init-treesitter)
