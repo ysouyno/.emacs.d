@@ -17,6 +17,9 @@
            (fboundp 'treesit-available-p)
            (treesit-available-p)
            (require 'init-treesitter)))
+
+;;; Save command history
+(add-hook 'after-init-hook 'savehist-mode)
 
 
 ;;; Save cursor position
