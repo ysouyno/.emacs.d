@@ -7,11 +7,13 @@
 (require 'init-elpa)
 (require 'init-editor)
 (require 'init-minibuffer)
+(require 'init-projectile)
 (require 'init-consult)
 (require 'init-recentf)
 (require 'init-corfu)
 (require 'init-vc)
 (require 'init-emacs-lisp)
+(require 'init-rust)
 
 (when (and (require 'treesit nil t)
            (fboundp 'treesit-available-p)

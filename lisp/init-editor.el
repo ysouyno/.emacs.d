@@ -24,7 +24,7 @@
 
 (require-package 'which-key)
 (add-hook 'after-init-hook 'which-key-mode)
-(setq-default which-key-idle-delay 1.5)
+(setq-default which-key-idle-delay 0.5)
 
 
 (provide 'init-editor)
