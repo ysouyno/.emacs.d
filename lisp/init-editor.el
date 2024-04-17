@@ -27,6 +27,12 @@
 (setq-default which-key-idle-delay 0.5)
 
 
+(when (maybe-require-package 'anzu)
+  (add-hook 'after-init-hook 'global-anzu-mode)
+  (global-set-key [remap query-replace-regexp] 'anzu-query-replace-regexp)
+  (global-set-key [remap query-replace] 'anzu-query-replace))
+
+
 (provide 'init-editor)
 
 ;;; init-editor.el ends here

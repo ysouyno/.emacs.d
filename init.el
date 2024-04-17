@@ -19,6 +19,7 @@
            (fboundp 'treesit-available-p)
            (treesit-available-p)
            (require 'init-treesitter)))
+
 
 ;;; Save command history
 (add-hook 'after-init-hook 'savehist-mode)
@@ -32,6 +33,13 @@
   (setq-default save-place t))
  ((>= emacs-major-version 25)
   (save-place-mode 1)))
+
+
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+(line-number-mode t)
+(column-number-mode t)
+;; (size-indication-mode t)
 
 
 (setq custom-file (locate-user-emacs-file "custom.el"))
