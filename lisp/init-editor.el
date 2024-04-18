@@ -33,6 +33,14 @@
   (global-set-key [remap query-replace] 'anzu-query-replace))
 
 
+(use-package whitespace
+  :init
+  (dolist (hook '(prog-mode-hook text-mode-hook))
+    (add-hook hook #'whitespace-mode))
+  :config
+  (setq whitespace-style '(face tabs empty trailing lines-tail)))
+
+
 (provide 'init-editor)
 
 ;;; init-editor.el ends here

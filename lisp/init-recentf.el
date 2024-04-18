@@ -10,7 +10,8 @@
                    "/ssh:"
                    ,(concat package-user-dir "/.*-autoloads\\.el\\'")
                    "/TAGS"
-                   ))
+                   )
+ recentf-auto-cleanup 'nerver)
 
 
 (if (fboundp 'consult-recent-file)
