@@ -6,6 +6,7 @@
 
 (require 'init-elpa)
 (require 'init-editor)
+(require 'init-whitespace)
 (require 'init-minibuffer)
 (require 'init-projectile)
 (require 'init-consult)
@@ -14,6 +15,7 @@
 (require 'init-vc)
 (require 'init-emacs-lisp)
 (require 'init-rust)
+(require 'init-markdown)
 
 (when (and (require 'treesit nil t)
            (fboundp 'treesit-available-p)
