@@ -6,7 +6,8 @@
   :ensure t
   :init
   (add-hook 'markdown-mode-hook 'turn-on-orgtbl)
-  (prefer-coding-system 'utf-8))
+  (prefer-coding-system 'utf-8)
+  (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode)))
 
 (use-package markdown-toc
   :ensure t)
