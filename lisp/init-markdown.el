@@ -5,7 +5,8 @@
 (use-package markdown-mode
   :ensure t
   :init
-  (add-hook 'markdown-mode-hook 'turn-on-orgtbl)
+  ;; File mode specification error: (void-function turn-on-orgtbl)
+  ;; (add-hook 'markdown-mode-hook 'turn-on-orgtbl)
   (prefer-coding-system 'utf-8)
   (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode)))
 
