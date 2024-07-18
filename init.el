@@ -16,6 +16,8 @@
 (require 'init-emacs-lisp)
 (require 'init-rust)
 (require 'init-markdown)
+(require 'init-lsp)
+(require 'init-cpp)
 
 (when (and (require 'treesit nil t)
            (fboundp 'treesit-available-p)
