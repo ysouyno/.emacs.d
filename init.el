@@ -46,6 +46,27 @@
 ;; (size-indication-mode t)
 
 
+;;; Personal settings
+;; org 模式下设置自动断行
+(add-hook 'org-mode-hook (lambda ()
+                           (setq-local truncate-lines nil)))
+
+;; 正在编辑的文件内容有修改时自动更新
+(global-auto-revert-mode)
+
+;; 鼠标滚动时保持光标相对位置不变
+(setq scroll-preserve-screen-position 'always)
+(global-hl-line-mode +1)
+
+;; 以下后缀名使用 glsl-mode
+(setq auto-mode-alist
+      (append
+       '(("\\.vs\\'" . glsl-mode))
+       '(("\\.fs\\'" . glsl-mode))
+       '(("\\.gs\\'" . glsl-mode))
+       auto-mode-alist))
+
+
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (when (file-exists-p custom-file)
   (load custom-file))
