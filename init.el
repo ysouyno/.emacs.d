@@ -16,13 +16,17 @@
 (require 'init-emacs-lisp)
 (require 'init-rust)
 (require 'init-markdown)
-(require 'init-lsp)
-(require 'init-cpp)
 
 (when (and (require 'treesit nil t)
            (fboundp 'treesit-available-p)
            (treesit-available-p)
            (require 'init-treesitter)))
+
+
+;;; 在 windows 平台上不加载 init-lsp 和 init-cpp
+(unless (eq system-type 'windows-nt)
+  (require 'init-lsp)
+  (require 'init-cpp))
 
 
 ;;; Save command history
