@@ -27,3 +27,4 @@
 /eln-cache
 /eshell
 .lsp-session-v1
+.frame-geometry.el
