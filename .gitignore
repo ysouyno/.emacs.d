@@ -26,5 +26,6 @@
 /projectile.cache
 /eln-cache
 /eshell
+/server
 .lsp-session-v1
 .frame-geometry.el
