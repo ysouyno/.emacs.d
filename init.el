@@ -64,12 +64,15 @@
 (global-hl-line-mode +1)
 
 ;; 以下后缀名使用 glsl-mode
-(setq auto-mode-alist
-      (append
-       '(("\\.vs\\'" . glsl-mode))
-       '(("\\.fs\\'" . glsl-mode))
-       '(("\\.gs\\'" . glsl-mode))
-       auto-mode-alist))
+(use-package glsl-mode
+  :ensure t
+  :config
+  (setq auto-mode-alist
+        (append
+         '(("\\.vs\\'" . glsl-mode))
+         '(("\\.fs\\'" . glsl-mode))
+         '(("\\.gs\\'" . glsl-mode))
+         auto-mode-alist)))
 
 ;; 关闭 C-M-\ 时自动插入 tab 字符
 (setq-default indent-tabs-mode nil)
