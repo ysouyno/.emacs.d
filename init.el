@@ -77,6 +77,10 @@
 ;; 关闭 C-M-\ 时自动插入 tab 字符
 (setq-default indent-tabs-mode nil)
 
+;; 右键打开带中文文件名的乱码问题
+(when (eq system-type 'windows-nt)
+  (setq file-name-coding-system 'gb18030))
+
 
 (setq custom-file (locate-user-emacs-file "custom.el"))
 (when (file-exists-p custom-file)
