@@ -30,3 +30,5 @@
 .lsp-session-v1
 .frame-geometry.el
 tramp
+*.html
+*.htm
