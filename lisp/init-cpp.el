@@ -1,4 +1,4 @@
-;;; init-cpp.el --- init-cpp.el
+;;; init-cpp.el --- init-cpp.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 

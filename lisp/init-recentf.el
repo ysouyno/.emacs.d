@@ -1,4 +1,4 @@
-;;; init-recentf.el --- init-recentf.el
+;;; init-recentf.el --- init-recentf.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 

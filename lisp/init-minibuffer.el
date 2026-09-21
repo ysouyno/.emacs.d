@@ -1,4 +1,4 @@
-;;; init-minibuffer.el --- init-minibuffer.el
+;;; init-minibuffer.el --- init-minibuffer.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 

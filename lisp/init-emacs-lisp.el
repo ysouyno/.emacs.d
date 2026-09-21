@@ -1,4 +1,4 @@
-;;; init-emacs-lisp.el --- init-emacs-lisp.el
+;;; init-emacs-lisp.el --- init-emacs-lisp.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 

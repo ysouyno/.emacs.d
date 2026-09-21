@@ -1,4 +1,4 @@
-;;; init-frame.el --- init-frame.el
+;;; init-frame.el --- init-frame.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -27,6 +27,7 @@
   (let* ((props '(left top width height))
          (values (mapcar '--normalize-frame-parameter props)))
     (with-temp-buffer
+      (insert ";; -*- lexical-binding: t; -*-\n")
       (cl-loop for prop in props
                for val in values
                do (insert (format "(add-to-list 'initial-frame-alist '(%s . %d))\n"

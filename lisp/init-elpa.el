@@ -1,4 +1,4 @@
-;;; init-elpa.el --- init-elpa.el
+;;; init-elpa.el --- init-elpa.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 

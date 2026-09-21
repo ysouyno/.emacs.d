@@ -1,4 +1,4 @@
-;;; init-vc.el --- init-vc.el
+;;; init-vc.el --- init-vc.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 

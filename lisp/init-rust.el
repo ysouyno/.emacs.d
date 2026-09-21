@@ -1,4 +1,4 @@
-;;; init-rust.el --- init-rust.el
+;;; init-rust.el --- init-rust.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 

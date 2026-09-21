@@ -1,4 +1,4 @@
-;;; init-lsp.el --- init-lsp.el
+;;; init-lsp.el --- init-lsp.el  -*- lexical-binding: t; -*-
 ;;; Commentary:
 ;;; Code:
 
