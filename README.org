@@ -15,5 +15,9 @@
 
 *** 常用快捷键
 
-1. 从 ~#+end_src~ 快速跳到 ~#+begin_src~
-   + ~C-c C-v C-u~
+1. 从 ~#+end_src~ 快速跳到 ~#+begin_src~ ： ~C-c C-v C-u~
+2. ~rg-project~ 的搜索结果窗口
+   + 下一个文件 ~S-M-n~
+   + 上一个文件 ~S-M-p~
+   + 预览当前行 ~C-o~
+3. 删除两个单词间的所有空格 ~delete-horizontal-space~ ： ~M-\~
