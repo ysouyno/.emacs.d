@@ -21,3 +21,18 @@
    + 上一个文件 ~S-M-p~
    + 预览当前行 ~C-o~
 3. 删除两个单词间的所有空格 ~delete-horizontal-space~ ： ~M-\~
+4. 拷贝 minibuffer 的所有内容： ~C-c C-l~
+
+*** 包简介
+
+**** vertico
+
+[[file:files/vertico_0.png]] [[file:files/vertico_1.png]]
+
+**** marginalia
+
+[[file:files/marginalia_0.png]] [[file:files/marginalia_1.png]]
+
+**** embark
+
+将 minibuffer 的所有内容导出，方便复制。
