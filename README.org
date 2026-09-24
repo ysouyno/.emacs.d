@@ -13,7 +13,7 @@
 #+creator: Emacs 30.2 (Org mode 9.7.11)
 #+cite_export:
 
-*** 常用快捷键
+** 常用快捷键
 
 1. 从 ~#+end_src~ 快速跳到 ~#+begin_src~ ： ~C-c C-v C-u~
 2. ~rg-project~ 的搜索结果窗口
@@ -22,17 +22,18 @@
    + 预览当前行 ~C-o~
 3. 删除两个单词间的所有空格 ~delete-horizontal-space~ ： ~M-\~
 4. 拷贝 minibuffer 的所有内容： ~C-c C-l~
+5. 插入换页符 ~^L~ ： ~C-q C-l~
 
-*** 包简介
+** 包简介
 
-**** vertico
+*** vertico
 
 [[file:files/vertico_0.png]] [[file:files/vertico_1.png]]
 
-**** marginalia
+*** marginalia
 
 [[file:files/marginalia_0.png]] [[file:files/marginalia_1.png]]
 
-**** embark
+*** embark
 
 将 minibuffer 的所有内容导出，方便复制。
