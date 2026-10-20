@@ -22,7 +22,7 @@
    + 预览当前行 ~C-o~
 3. 删除两个单词间的所有空格 ~delete-horizontal-space~ ： ~M-\~
 4. 拷贝 minibuffer 的所有内容： ~C-c C-l~
-5. 插入换页符 ~^L~ ： ~C-q C-l~
+5. 插入分页符 ~FORM FEED (FF) (^L)~ ： ~C-q C-l~
 
 ** 包简介
 
